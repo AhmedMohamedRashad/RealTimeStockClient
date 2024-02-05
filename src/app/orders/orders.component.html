@@ -1,0 +1,24 @@
+<div class="container">
+    <a routerLink="/createorder" class="btn btn-success m-md-2">Create new order</a>
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Stock Symbol</th>
+                <th>quantity</th>
+                <th>order Type </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{ order.stockSymbol }}</td>
+                <td>{{ order.quantity }}</td>
+                <td>{{ order.orderTypeName }}</td>
+               
+               
+            </tr>
+        </tbody>
+    </table>
+</div>

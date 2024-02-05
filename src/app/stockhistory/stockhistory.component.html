@@ -1,0 +1,22 @@
+<div class="container">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Price</th>
+                <th>Time </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let history of historylist">
+                <td>{{ history.stockSymbol }}</td>
+                <td>{{ history.price }}</td>
+                <td>{{ history.timeStamps }}</td>
+              
+               
+            </tr>
+        </tbody>
+    </table>
+</div>
